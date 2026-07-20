@@ -1,0 +1,99 @@
+.menu-link{
+    position: relative;
+    color: #212529;
+    font-weight: 500;
+    transition: color .3s ease;
+}
+
+/* Hover Text */
+.menu-link:hover{
+    color: var(--bs-danger) !important;
+}
+
+/* Underline */
+.menu-link::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background: var(--bs-danger);
+    transform: translateX(-50%);
+    transition: width .3s ease;
+}
+
+/* Underline Animation */
+.menu-link:hover::after{
+    width: 70%;
+}
+
+
+/* Banner Section */
+section{
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.display-4{
+    font-weight: 700;
+}
+
+.lead{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.btn-danger{
+    padding: 12px 35px;
+    border-radius: 30px;
+}
+
+.banner-section{
+    background-color: #fff0f3; /* Light Pink */
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+.story-text{
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.story-text:hover{
+    color: var(--bs-dark) !important;
+}
+
+.category-img{
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.category-img:hover{
+    border-color: var(--bs-danger);
+    transform: scale(1.05);
+}
+
+.category-card{
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.category-card:hover{
+    border-color: var(--bs-danger) !important;
+}
+
+.category-section{
+    background-color: #fff8f0;   /* Dark Pink */
+}
+
+/* Banner section 2 */
+
+.banner-section2{
+    background-color: #290000;
+}
+
+/* Cards section 2 */
+
