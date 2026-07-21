@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .menu-link{
     position: relative;
     color: #212529;
@@ -5,12 +9,12 @@
     transition: color .3s ease;
 }
 
-/* Hover Text */
+
 .menu-link:hover{
     color: var(--bs-danger) !important;
 }
 
-/* Underline */
+
 .menu-link::after{
     content: "";
     position: absolute;
@@ -23,7 +27,7 @@
     transition: width .3s ease;
 }
 
-/* Underline Animation */
+
 .menu-link:hover::after{
     width: 70%;
 }
@@ -95,5 +99,13 @@ section{
     background-color: #290000;
 }
 
-/* Cards section 2 */
+/* Footer section */
 
+.footer-link{
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.footer-link:hover{
+    color: var(--bs-danger) !important;
+}
